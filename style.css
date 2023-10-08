@@ -1,0 +1,43 @@
+body {
+  width: 250px;
+  height: 350px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+}
+
+#title {
+  color: #3D3D3D;
+  font-size: 15px;
+}
+
+#input-field {
+  width: 250px;
+  height: 225px;
+  background-color: #F6F6F6;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  resize: none;
+}
+
+button {
+  width: 115px;
+  height: 25px;
+  margin: 5px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #4CAF50;
+}

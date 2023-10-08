@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Morer - offensive privacy extension",
+    "description": "Extension gives you opportunity to explain what you expect from all the sites proactively.", 
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "storage"
+      ],
+    
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],          
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "morer_16.png",
+          "48": "morer_48.png",
+          "128": "morer_128.png"
+        }
+      },
+    
+      "background": {
+        "service_worker": "background.js"
+      },
+    
+
+    
+      "icons": {
+        "16": "morer_16.png",
+        "48": "morer_48.png",
+        "128": "morer_128.png"
+      }
+    }
